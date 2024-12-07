@@ -1,0 +1,37 @@
+#logo {
+  color: #ff598b;
+  font-family: "Leckerli One", serif;
+  font-size: 2.5rem;
+}
+
+.headingMd, .headingSm {
+  font-family: "Baloo 2", serif;
+  font-weight: 800;
+}
+
+.headingMd {
+  font-size: 1.75rem;
+}
+
+.headingSm {
+  font-size: 1.125rem;
+}
+
+.bodyMd {
+  font-size: 1rem;
+}
+
+.bodySm {
+  font-size: 0.875rem;
+}
+
+.bodyXs {
+  font-size: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=global.css.map */
