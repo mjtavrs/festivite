@@ -3,12 +3,34 @@
 body {
     main {
         form {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            fieldset:nth-child(1) {
+                legend::before {
+                    content: "🔗";
+                    margin-right: 0.75rem;
+                    font-size: 2rem;
+                    vertical-align: middle;
+                }
+            }
+
             fieldset {
                 border: none;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                legend {
+                    margin-bottom: 1.5rem;
+                }
 
                 div {
                     display: flex;
                     flex-direction: column;
+                    gap: 0.75rem;
+
 
                     input, textarea {
                         background-color: $input-base;
@@ -34,6 +56,12 @@ body {
 
                     textarea {
                         min-height: 8.5rem;
+                    }
+
+                    input[type="datetime-local"] {
+                        &::-webkit-calendar-picker-indicator {
+                            opacity: 0;
+                        }
                     }
                 }
 
