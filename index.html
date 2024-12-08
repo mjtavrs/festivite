@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Festivite</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
@@ -15,14 +16,215 @@
 </head>
 <body>
     <aside>
-
+        <img src="assets/svg/logo.svg">
+        <h1 id="logo">
+            Festivite
+        </h1>
+        <p>
+            Crie um convite digital para o seu evento
+        </p>
     </aside>
     <main>
-        <h2>
+        <h2 class="headingMd">
             Crie seu convite
         </h2>
-        <form action="">
-            
+        <form action="" method="post">
+            <fieldset>
+                <legend class="headingSm">Sobre o evento</legend>
+                <div>
+                    <label class="bodySm" for="eventTitle">Título</label>
+                    <input type="text" id="eventTitle">
+                </div>
+                <div class="twoColumnsInputs">
+                    <div>
+                        <label class="bodySm" for="startDateAndTime">Início</label>
+                        <input type="datetime-local" id="startDateAndTime">
+                    </div>
+                    <div>
+                        <label class="bodySm" for="endDateAndTime">Fim</label>
+                        <input type="datetime-local" id="endDateAndTime">
+                    </div>
+                </div>
+                <div class="twoColumnsInputs">
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="bodySm" for="location">Local</label>
+                        <input type="text" id="location">
+                    </div>
+                </div>
+                <div>
+                    <label class="bodySm" for="eventDescription">Descrição</label>
+                    <textarea id="eventDescription"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="headingSm">Personalização</legend>
+                <div>
+                    <p class="bodySm">Cor principal</p>
+                    <div>
+                        <input type="radio" name="mainColor" id="brandLight">
+                        <input type="radio" name="mainColor" id="navy">
+                        <input type="radio" name="mainColor" id="purple">
+                        <input type="radio" name="mainColor" id="fuschia">
+                        <input type="radio" name="mainColor" id="pink">
+                        <input type="radio" name="mainColor" id="danger">
+                        <input type="radio" name="mainColor" id="orange">
+                        <input type="radio" name="mainColor" id="yellow">
+                        <input type="radio" name="mainColor" id="lime">
+                        <input type="radio" name="mainColor" id="green">
+                        <input type="radio" name="mainColor" id="cyan">
+                    </div>
+                </div>
+                <div>
+                    <p class="bodySm">Tema do evento</p>
+                    <div id="eventThemeCardsContainer">
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="birthday">
+                            <label for="birthday">
+                                Aniversário
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="child">
+                            <label for="child">
+                                Infantil
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="graduation">
+                            <label for="graduation">
+                                Formatura
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="marriage">
+                            <label for="marriage">
+                                Casamento
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="babyShower">
+                            <label for="babyShower">
+                                Chá de bebê
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="showerTea">
+                            <label for="showerTea">
+                                Chá de panela
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="carnival">
+                            <label for="carnival">
+                                Carnaval
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="easter">
+                            <label for="easter">
+                                Páscoa
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="juneFestival">
+                            <label for="juneFestival">
+                                São João
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="halloween">
+                            <label for="halloween">
+                                Halloween
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="christmas">
+                            <label for="christmas">
+                                Natal
+                            </label>
+                        </div>
+                        <div class="eventThemeCard">
+                            <img src="" alt="">
+                            <input type="radio" name="eventTheme" id="other">
+                            <label for="other">
+                                Outro
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="threeColumnInputs">
+                    <div>
+                        <p>Estilo</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="bodySm" for="coverPhoto">Foto de capa</label>
+                        <input type="file" id="coverPhoto">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="headingSm">Dados para contato</legend>
+                <div>
+                    <label class="bodySm" for="partyHostName">Nome</label>
+                    <input type="text" id="partyHostName">
+                </div>
+                <div class="twoColumnsInputs">
+                    <div>
+                        <label class="bodySm" for="partyHostEmail">E-mail</label>
+                        <input type="email" id="partyHostEmail">
+                    </div>
+                    <div>
+                        <label class="bodySm" for="partyHostPhone">Telefone</label>
+                        <input type="tel" id="partyHostPhone">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <input type="checkbox" id="agreeWithTermsAndConditions" required>
+                    <label for="agreeWithTermsAndConditions">
+                        Li e concordo com os Termos e Condições e com a Política de Privacidade
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="acceptToReceiveMessagesViaEmail">
+                    <label for="acceptToReceiveMessagesViaEmail">
+                        Aceito receber atualizações e promoções por e-mail
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="acceptToReceiveMessagesViaSMS">
+                    <label for="acceptToReceiveMessagesViaSMS">
+                        Aceito receber atualizações e promoções por SMS
+                    </label>
+                </div>
+            </fieldset>
+            <button>
+                <span>
+                    Gerar convite
+                </span>
+            </button>
         </form>
     </main>
 </body>

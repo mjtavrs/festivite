@@ -1,0 +1,48 @@
+@import "./global";
+
+body {
+    main {
+        form {
+            fieldset {
+                border: none;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    input, textarea {
+                        background-color: $input-base;
+                        border: 1px solid $input-stroke;
+                        border-radius: 0.5rem;
+                        color: $text-heading;
+                        font-size: 1rem;
+                        padding: 0.75rem 1rem;
+                        outline: none;
+
+                        &::placeholder {
+                            color: $input-placeholder;
+                        }
+
+                        &:focus {
+                            border: 1px solid $brand-light;
+                        }
+
+                        &:invalid {
+                            border: 1px solid $danger;
+                        }
+                    }
+
+                    textarea {
+                        min-height: 8.5rem;
+                    }
+                }
+
+                .twoColumnsInputs {
+                    display: grid;
+                    gap: 1rem;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}

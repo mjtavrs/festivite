@@ -1,1 +1,113 @@
-/*# sourceMappingURL=form.css.map */
+#logo {
+  color: #ff598b;
+  font-family: "Leckerli One", serif;
+  font-size: 2.5rem;
+}
+
+.headingMd, .headingSm {
+  color: #f9f9f9;
+  font-family: "Baloo 2", serif;
+  font-weight: 800;
+}
+
+.headingMd {
+  font-size: 1.75rem;
+}
+
+.headingSm {
+  font-size: 1.125rem;
+}
+
+.bodyMd {
+  font-size: 1rem;
+}
+
+.bodySm {
+  color: #c8cdd0;
+  font-size: 0.875rem;
+}
+
+.bodyXs {
+  font-size: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #131516;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  overflow: hidden;
+  height: 100dvh;
+}
+body aside {
+  background-image: url("../assets/others/background.png");
+  background-size: cover;
+  border-radius: 1.75rem;
+  padding: 2rem;
+}
+body aside img {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+body aside h1 {
+  color: #ff598b;
+  margin-bottom: 0.25rem;
+}
+body aside p {
+  color: #f9f9f9;
+  font-weight: 300;
+}
+body main {
+  background-color: #212427;
+  border-radius: 1.75rem;
+  padding: 5rem 8.125rem;
+  overflow-y: scroll;
+}
+body main h2 {
+  margin-bottom: 2.5rem;
+}
+
+body main form fieldset {
+  border: none;
+}
+body main form fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+body main form fieldset div input, body main form fieldset div textarea {
+  background-color: #1c1f21;
+  border: 1px solid #363b40;
+  border-radius: 0.5rem;
+  color: #f9f9f9;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  outline: none;
+}
+body main form fieldset div input::-moz-placeholder, body main form fieldset div textarea::-moz-placeholder {
+  color: #869198;
+}
+body main form fieldset div input::placeholder, body main form fieldset div textarea::placeholder {
+  color: #869198;
+}
+body main form fieldset div input:focus, body main form fieldset div textarea:focus {
+  border: 1px solid #59b2ff;
+}
+body main form fieldset div input:invalid, body main form fieldset div textarea:invalid {
+  border: 1px solid #ff5959;
+}
+body main form fieldset div textarea {
+  min-height: 8.5rem;
+}
+body main form fieldset .twoColumnsInputs {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}/*# sourceMappingURL=form.css.map */

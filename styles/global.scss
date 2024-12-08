@@ -36,6 +36,7 @@ $text-heading: #f9f9f9;
 }
 
 .headingMd, .headingSm {
+    color: $text-heading;
     font-family: "Baloo 2", serif;
     font-weight: 800;
 }
@@ -53,6 +54,7 @@ $text-heading: #f9f9f9;
 }
 
 .bodySm {
+    color: $text-body;
     font-size: 0.875rem;
 }
 
@@ -66,4 +68,47 @@ $text-heading: #f9f9f9;
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: $shape-background;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    overflow: hidden;
+    height: 100dvh;
+
+    aside {
+        background-image: url("../assets/others/background.png");
+        background-size: cover;
+        border-radius: 1.75rem;
+        padding: 2rem;
+
+        img {
+            height: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: $pink;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            color: $text-heading;
+            font-weight: 300;
+        }
+    }
+
+    main {
+        background-color: $shape-body;
+        border-radius: 1.75rem;
+        padding: 5rem 8.125rem;
+        overflow-y: scroll;
+
+        h2 {
+            margin-bottom: 2.5rem;
+        }
+    }
 }

@@ -5,6 +5,7 @@
 }
 
 .headingMd, .headingSm {
+  color: #f9f9f9;
   font-family: "Baloo 2", serif;
   font-weight: 800;
 }
@@ -22,6 +23,7 @@
 }
 
 .bodySm {
+  color: #c8cdd0;
   font-size: 0.875rem;
 }
 
@@ -34,4 +36,41 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #131516;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  overflow: hidden;
+  height: 100dvh;
+}
+body aside {
+  background-image: url("../assets/others/background.png");
+  background-size: cover;
+  border-radius: 1.75rem;
+  padding: 2rem;
+}
+body aside img {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+body aside h1 {
+  color: #ff598b;
+  margin-bottom: 0.25rem;
+}
+body aside p {
+  color: #f9f9f9;
+  font-weight: 300;
+}
+body main {
+  background-color: #212427;
+  border-radius: 1.75rem;
+  padding: 5rem 8.125rem;
+  overflow-y: scroll;
+}
+body main h2 {
+  margin-bottom: 2.5rem;
 }/*# sourceMappingURL=global.css.map */
